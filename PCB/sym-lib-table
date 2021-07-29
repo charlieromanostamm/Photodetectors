@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Photd_OpAmp-rescue)(type Legacy)(uri ${KIPRJMOD}/Photd_OpAmp-rescue.lib)(options "")(descr ""))
+)
