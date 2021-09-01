@@ -1,0 +1,714 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0102
+U 1 1 61025A2D
+P 3300 2900
+F 0 "#PWR0102" H 3300 2650 50  0001 C CNN
+F 1 "GND" H 3305 2727 50  0000 C CNN
+F 2 "" H 3300 2900 50  0001 C CNN
+F 3 "" H 3300 2900 50  0001 C CNN
+	1    3300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1550 2500 1750
+Wire Wire Line
+	2500 2050 2500 2400
+Connection ~ 4100 1700
+Wire Wire Line
+	4100 1350 4100 1700
+Wire Wire Line
+	3800 1350 4100 1350
+Connection ~ 3200 1700
+Wire Wire Line
+	3200 1350 3500 1350
+Wire Wire Line
+	3200 1700 3200 1350
+Wire Wire Line
+	3800 1700 4100 1700
+Wire Wire Line
+	3200 1700 3500 1700
+Wire Wire Line
+	3300 2600 3300 2900
+Wire Wire Line
+	3350 2600 3300 2600
+$Comp
+L power:+VDC #PWR0103
+U 1 1 61021614
+P 2500 1550
+F 0 "#PWR0103" H 2500 1450 50  0001 C CNN
+F 1 "+VDC" H 2500 1825 50  0000 C CNN
+F 2 "" H 2500 1550 50  0001 C CNN
+F 3 "" H 2500 1550 50  0001 C CNN
+	1    2500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Photo D1
+U 1 1 61020749
+P 2500 1950
+F 0 "D1" V 2404 2107 50  0000 L CNN
+F 1 "D_Photo" V 2495 2107 50  0000 L CNN
+F 2 "Vishay:BPW34" H 2450 1950 50  0001 C CNN
+F 3 "~" H 2450 1950 50  0001 C CNN
+	1    2500 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61020151
+P 3650 1350
+F 0 "C1" V 3398 1350 50  0000 C CNN
+F 1 "C" V 3489 1350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3688 1200 50  0001 C CNN
+F 3 "~" H 3650 1350 50  0001 C CNN
+	1    3650 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6101FC9B
+P 3650 1700
+F 0 "R1" V 3443 1700 50  0000 C CNN
+F 1 "R" V 3534 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3580 1700 50  0001 C CNN
+F 3 "~" H 3650 1700 50  0001 C CNN
+	1    3650 1700
+	0    1    1    0   
+$EndComp
+Text GLabel 4300 2500 2    50   Input ~ 0
+Vo1
+$Comp
+L power:-VDC #PWR0110
+U 1 1 610C07F2
+P 3600 6550
+F 0 "#PWR0110" H 3600 6450 50  0001 C CNN
+F 1 "-VDC" H 3600 6825 50  0000 C CNN
+F 2 "" H 3600 6550 50  0001 C CNN
+F 3 "" H 3600 6550 50  0001 C CNN
+	1    3600 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR0111
+U 1 1 610C07F8
+P 3250 6550
+F 0 "#PWR0111" H 3250 6450 50  0001 C CNN
+F 1 "+VDC" H 3250 6825 50  0000 C CNN
+F 2 "" H 3250 6550 50  0001 C CNN
+F 3 "" H 3250 6550 50  0001 C CNN
+	1    3250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 610CCE8D
+P 3300 7150
+F 0 "#PWR0112" H 3300 6900 50  0001 C CNN
+F 1 "GND" H 3305 6977 50  0000 C CNN
+F 2 "" H 3300 7150 50  0001 C CNN
+F 3 "" H 3300 7150 50  0001 C CNN
+	1    3300 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #PWR0101
+U 1 1 61128541
+P 4250 6250
+F 0 "#PWR0101" H 4250 6150 50  0001 C CNN
+F 1 "-VDC" H 4250 6525 50  0000 C CNN
+F 2 "" H 4250 6250 50  0001 C CNN
+F 3 "" H 4250 6250 50  0001 C CNN
+	1    4250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR0113
+U 1 1 61128547
+P 5200 6250
+F 0 "#PWR0113" H 5200 6150 50  0001 C CNN
+F 1 "+VDC" H 5200 6525 50  0000 C CNN
+F 2 "" H 5200 6250 50  0001 C CNN
+F 3 "" H 5200 6250 50  0001 C CNN
+	1    5200 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 611238C8
+P 4250 6400
+F 0 "C5" V 3998 6400 50  0000 C CNN
+F 1 "C" V 4089 6400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4288 6250 50  0001 C CNN
+F 3 "~" H 4250 6400 50  0001 C CNN
+	1    4250 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 611EC91E
+P 2650 6800
+F 0 "J1" H 2758 7081 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2758 6990 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 2650 6800 50  0001 C CNN
+F 3 "~" H 2650 6800 50  0001 C CNN
+	1    2650 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6700 3250 6700
+Wire Wire Line
+	3250 6700 3250 6550
+Wire Wire Line
+	2850 6900 3600 6900
+Wire Wire Line
+	3600 6900 3600 6550
+Wire Wire Line
+	2850 6800 3300 6800
+Wire Wire Line
+	3300 6800 3300 7050
+$Comp
+L Connector:TestPoint TP1
+U 1 1 612150E1
+P 1650 6600
+F 0 "TP1" V 1604 6788 50  0000 L CNN
+F 1 "TestPoint" V 1695 6788 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1850 6600 50  0001 C CNN
+F 3 "~" H 1850 6600 50  0001 C CNN
+	1    1650 6600
+	0    1    1    0   
+$EndComp
+Text GLabel 1450 6600 0    50   Input ~ 0
+Vo1
+Wire Wire Line
+	1450 6600 1650 6600
+Text GLabel 1450 6750 0    50   Input ~ 0
+Vo1
+Wire Wire Line
+	1450 6750 1650 6750
+Wire Wire Line
+	1450 7050 1650 7050
+Text GLabel 1450 7050 0    50   Input ~ 0
+Vo3
+Wire Wire Line
+	1450 6900 1650 6900
+Text GLabel 1450 6900 0    50   Input ~ 0
+Vo2
+$Comp
+L Connector:TestPoint TP2
+U 1 1 612516A4
+P 1650 6750
+F 0 "TP2" V 1604 6938 50  0000 L CNN
+F 1 "TestPoint" V 1695 6938 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1850 6750 50  0001 C CNN
+F 3 "~" H 1850 6750 50  0001 C CNN
+	1    1650 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61253513
+P 1650 6900
+F 0 "TP3" V 1604 7088 50  0000 L CNN
+F 1 "TestPoint" V 1695 7088 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1850 6900 50  0001 C CNN
+F 3 "~" H 1850 6900 50  0001 C CNN
+	1    1650 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 61257325
+P 1650 7050
+F 0 "TP4" V 1604 7238 50  0000 L CNN
+F 1 "TestPoint" V 1695 7238 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1850 7050 50  0001 C CNN
+F 3 "~" H 1850 7050 50  0001 C CNN
+	1    1650 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 612C0178
+P 3150 7050
+F 0 "TP6" V 3104 7238 50  0000 L CNN
+F 1 "TestPoint" V 3195 7238 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3350 7050 50  0001 C CNN
+F 3 "~" H 3350 7050 50  0001 C CNN
+	1    3150 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 7050 3300 7050
+Connection ~ 3300 7050
+Wire Wire Line
+	3300 7050 3300 7150
+$Comp
+L Amplifier_Operational:OP07 U1
+U 1 1 612FE16E
+P 3650 2500
+F 0 "U1" H 3994 2454 50  0000 L CNN
+F 1 "OP07" H 3994 2545 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 3700 2550 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 3700 2650 50  0001 C CNN
+	1    3650 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-VDC #PWR0104
+U 1 1 61317BC9
+P 3550 2200
+F 0 "#PWR0104" H 3550 2100 50  0001 C CNN
+F 1 "-VDC" H 3550 2475 50  0000 C CNN
+F 2 "" H 3550 2200 50  0001 C CNN
+F 3 "" H 3550 2200 50  0001 C CNN
+	1    3550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2400 3200 2400
+Wire Wire Line
+	3950 2500 4100 2500
+$Comp
+L power:+VDC #PWR0105
+U 1 1 61320421
+P 3550 2800
+F 0 "#PWR0105" H 3550 2700 50  0001 C CNN
+F 1 "+VDC" H 3550 3075 50  0000 C CNN
+F 2 "" H 3550 2800 50  0001 C CNN
+F 3 "" H 3550 2800 50  0001 C CNN
+	1    3550 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 1700 3200 2400
+Connection ~ 3200 2400
+Wire Wire Line
+	3200 2400 3350 2400
+Wire Wire Line
+	4100 1700 4100 2500
+Connection ~ 4100 2500
+Wire Wire Line
+	4100 2500 4300 2500
+$Comp
+L power:GND #PWR0106
+U 1 1 6133D558
+P 7450 2900
+F 0 "#PWR0106" H 7450 2650 50  0001 C CNN
+F 1 "GND" H 7455 2727 50  0000 C CNN
+F 2 "" H 7450 2900 50  0001 C CNN
+F 3 "" H 7450 2900 50  0001 C CNN
+	1    7450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1550 6650 1750
+Wire Wire Line
+	6650 2050 6650 2400
+Connection ~ 8250 1700
+Wire Wire Line
+	8250 1350 8250 1700
+Wire Wire Line
+	7950 1350 8250 1350
+Connection ~ 7350 1700
+Wire Wire Line
+	7350 1350 7650 1350
+Wire Wire Line
+	7350 1700 7350 1350
+Wire Wire Line
+	7950 1700 8250 1700
+Wire Wire Line
+	7350 1700 7650 1700
+Wire Wire Line
+	7450 2600 7450 2900
+Wire Wire Line
+	7500 2600 7450 2600
+$Comp
+L power:+VDC #PWR0107
+U 1 1 6133D56A
+P 6650 1550
+F 0 "#PWR0107" H 6650 1450 50  0001 C CNN
+F 1 "+VDC" H 6650 1825 50  0000 C CNN
+F 2 "" H 6650 1550 50  0001 C CNN
+F 3 "" H 6650 1550 50  0001 C CNN
+	1    6650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Photo D3
+U 1 1 6133D570
+P 6650 1950
+F 0 "D3" V 6554 2107 50  0000 L CNN
+F 1 "D_Photo" V 6645 2107 50  0000 L CNN
+F 2 "Vishay:BPW34" H 6600 1950 50  0001 C CNN
+F 3 "~" H 6600 1950 50  0001 C CNN
+	1    6650 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6133D576
+P 7800 1350
+F 0 "C4" V 7548 1350 50  0000 C CNN
+F 1 "C" V 7639 1350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7838 1200 50  0001 C CNN
+F 3 "~" H 7800 1350 50  0001 C CNN
+	1    7800 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6133D57C
+P 7800 1700
+F 0 "R3" V 7593 1700 50  0000 C CNN
+F 1 "R" V 7684 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7730 1700 50  0001 C CNN
+F 3 "~" H 7800 1700 50  0001 C CNN
+	1    7800 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:OP07 U3
+U 1 1 6133D583
+P 7800 2500
+F 0 "U3" H 8144 2454 50  0000 L CNN
+F 1 "OP07" H 8144 2545 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 7850 2550 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 7850 2650 50  0001 C CNN
+	1    7800 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-VDC #PWR0108
+U 1 1 6133D589
+P 7700 2200
+F 0 "#PWR0108" H 7700 2100 50  0001 C CNN
+F 1 "-VDC" H 7700 2475 50  0000 C CNN
+F 2 "" H 7700 2200 50  0001 C CNN
+F 3 "" H 7700 2200 50  0001 C CNN
+	1    7700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2400 7350 2400
+Wire Wire Line
+	8100 2500 8250 2500
+$Comp
+L power:+VDC #PWR0109
+U 1 1 6133D591
+P 7700 2800
+F 0 "#PWR0109" H 7700 2700 50  0001 C CNN
+F 1 "+VDC" H 7700 3075 50  0000 C CNN
+F 2 "" H 7700 2800 50  0001 C CNN
+F 3 "" H 7700 2800 50  0001 C CNN
+	1    7700 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 1700 7350 2400
+Connection ~ 7350 2400
+Wire Wire Line
+	7350 2400 7500 2400
+Wire Wire Line
+	8250 1700 8250 2500
+Connection ~ 8250 2500
+Wire Wire Line
+	8250 2500 8450 2500
+$Comp
+L power:GND #PWR0114
+U 1 1 6133FBBD
+P 3350 5350
+F 0 "#PWR0114" H 3350 5100 50  0001 C CNN
+F 1 "GND" H 3355 5177 50  0000 C CNN
+F 2 "" H 3350 5350 50  0001 C CNN
+F 3 "" H 3350 5350 50  0001 C CNN
+	1    3350 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4000 2550 4200
+Wire Wire Line
+	2550 4500 2550 4850
+Connection ~ 4150 4150
+Wire Wire Line
+	4150 3800 4150 4150
+Wire Wire Line
+	3850 3800 4150 3800
+Connection ~ 3250 4150
+Wire Wire Line
+	3250 3800 3550 3800
+Wire Wire Line
+	3250 4150 3250 3800
+Wire Wire Line
+	3850 4150 4150 4150
+Wire Wire Line
+	3250 4150 3550 4150
+Wire Wire Line
+	3350 5050 3350 5350
+Wire Wire Line
+	3400 5050 3350 5050
+$Comp
+L power:+VDC #PWR0115
+U 1 1 6133FBCF
+P 2550 4000
+F 0 "#PWR0115" H 2550 3900 50  0001 C CNN
+F 1 "+VDC" H 2550 4275 50  0000 C CNN
+F 2 "" H 2550 4000 50  0001 C CNN
+F 3 "" H 2550 4000 50  0001 C CNN
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Photo D2
+U 1 1 6133FBD5
+P 2550 4400
+F 0 "D2" V 2454 4557 50  0000 L CNN
+F 1 "D_Photo" V 2545 4557 50  0000 L CNN
+F 2 "Vishay:BPW34" H 2500 4400 50  0001 C CNN
+F 3 "~" H 2500 4400 50  0001 C CNN
+	1    2550 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6133FBDB
+P 3700 3800
+F 0 "C2" V 3448 3800 50  0000 C CNN
+F 1 "C" V 3539 3800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3738 3650 50  0001 C CNN
+F 3 "~" H 3700 3800 50  0001 C CNN
+	1    3700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6133FBE1
+P 3700 4150
+F 0 "R2" V 3493 4150 50  0000 C CNN
+F 1 "R" V 3584 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3630 4150 50  0001 C CNN
+F 3 "~" H 3700 4150 50  0001 C CNN
+	1    3700 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:OP07 U2
+U 1 1 6133FBE8
+P 3700 4950
+F 0 "U2" H 4044 4904 50  0000 L CNN
+F 1 "OP07" H 4044 4995 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 3750 5000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 3750 5100 50  0001 C CNN
+	1    3700 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-VDC #PWR0116
+U 1 1 6133FBEE
+P 3600 4650
+F 0 "#PWR0116" H 3600 4550 50  0001 C CNN
+F 1 "-VDC" H 3600 4925 50  0000 C CNN
+F 2 "" H 3600 4650 50  0001 C CNN
+F 3 "" H 3600 4650 50  0001 C CNN
+	1    3600 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4850 3250 4850
+Wire Wire Line
+	4000 4950 4150 4950
+$Comp
+L power:+VDC #PWR0117
+U 1 1 6133FBF6
+P 3600 5250
+F 0 "#PWR0117" H 3600 5150 50  0001 C CNN
+F 1 "+VDC" H 3600 5525 50  0000 C CNN
+F 2 "" H 3600 5250 50  0001 C CNN
+F 3 "" H 3600 5250 50  0001 C CNN
+	1    3600 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 4150 3250 4850
+Connection ~ 3250 4850
+Wire Wire Line
+	3250 4850 3400 4850
+Wire Wire Line
+	4150 4150 4150 4950
+Connection ~ 4150 4950
+Wire Wire Line
+	4150 4950 4350 4950
+$Comp
+L power:GND #PWR0118
+U 1 1 61342333
+P 7500 5400
+F 0 "#PWR0118" H 7500 5150 50  0001 C CNN
+F 1 "GND" H 7505 5227 50  0000 C CNN
+F 2 "" H 7500 5400 50  0001 C CNN
+F 3 "" H 7500 5400 50  0001 C CNN
+	1    7500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4050 6700 4250
+Wire Wire Line
+	6700 4550 6700 4900
+Connection ~ 8300 4200
+Wire Wire Line
+	8300 3850 8300 4200
+Wire Wire Line
+	8000 3850 8300 3850
+Connection ~ 7400 4200
+Wire Wire Line
+	7400 3850 7700 3850
+Wire Wire Line
+	7400 4200 7400 3850
+Wire Wire Line
+	8000 4200 8300 4200
+Wire Wire Line
+	7400 4200 7700 4200
+Wire Wire Line
+	7500 5100 7500 5400
+Wire Wire Line
+	7550 5100 7500 5100
+$Comp
+L power:+VDC #PWR0119
+U 1 1 61342345
+P 6700 4050
+F 0 "#PWR0119" H 6700 3950 50  0001 C CNN
+F 1 "+VDC" H 6700 4325 50  0000 C CNN
+F 2 "" H 6700 4050 50  0001 C CNN
+F 3 "" H 6700 4050 50  0001 C CNN
+	1    6700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Photo D4
+U 1 1 6134234B
+P 6700 4450
+F 0 "D4" V 6604 4607 50  0000 L CNN
+F 1 "D_Photo" V 6695 4607 50  0000 L CNN
+F 2 "Vishay:BPW34" H 6650 4450 50  0001 C CNN
+F 3 "~" H 6650 4450 50  0001 C CNN
+	1    6700 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 61342351
+P 7850 3850
+F 0 "C6" V 7598 3850 50  0000 C CNN
+F 1 "C" V 7689 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7888 3700 50  0001 C CNN
+F 3 "~" H 7850 3850 50  0001 C CNN
+	1    7850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61342357
+P 7850 4200
+F 0 "R4" V 7643 4200 50  0000 C CNN
+F 1 "R" V 7734 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7780 4200 50  0001 C CNN
+F 3 "~" H 7850 4200 50  0001 C CNN
+	1    7850 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:OP07 U4
+U 1 1 6134235E
+P 7850 5000
+F 0 "U4" H 8194 4954 50  0000 L CNN
+F 1 "OP07" H 8194 5045 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 7900 5050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 7900 5150 50  0001 C CNN
+	1    7850 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-VDC #PWR0120
+U 1 1 61342364
+P 7750 4700
+F 0 "#PWR0120" H 7750 4600 50  0001 C CNN
+F 1 "-VDC" H 7750 4975 50  0000 C CNN
+F 2 "" H 7750 4700 50  0001 C CNN
+F 3 "" H 7750 4700 50  0001 C CNN
+	1    7750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4900 7400 4900
+Wire Wire Line
+	8150 5000 8300 5000
+$Comp
+L power:+VDC #PWR0121
+U 1 1 6134236C
+P 7750 5300
+F 0 "#PWR0121" H 7750 5200 50  0001 C CNN
+F 1 "+VDC" H 7750 5575 50  0000 C CNN
+F 2 "" H 7750 5300 50  0001 C CNN
+F 3 "" H 7750 5300 50  0001 C CNN
+	1    7750 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 4200 7400 4900
+Connection ~ 7400 4900
+Wire Wire Line
+	7400 4900 7550 4900
+Wire Wire Line
+	8300 4200 8300 5000
+$Comp
+L Device:C C3
+U 1 1 61354575
+P 5200 6400
+F 0 "C3" V 4948 6400 50  0000 C CNN
+F 1 "C" V 5039 6400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5238 6250 50  0001 C CNN
+F 3 "~" H 5200 6400 50  0001 C CNN
+	1    5200 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 61358425
+P 4750 6650
+F 0 "#PWR0122" H 4750 6400 50  0001 C CNN
+F 1 "GND" H 4755 6477 50  0000 C CNN
+F 2 "" H 4750 6650 50  0001 C CNN
+F 3 "" H 4750 6650 50  0001 C CNN
+	1    4750 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6550 4750 6550
+Wire Wire Line
+	4750 6550 4750 6650
+Wire Wire Line
+	4750 6550 5200 6550
+Connection ~ 4750 6550
+Connection ~ 8300 5000
+Wire Wire Line
+	8300 5000 8500 5000
+Text GLabel 8500 5000 2    50   Input ~ 0
+Vo4
+Text GLabel 8450 2500 2    50   Input ~ 0
+Vo3
+Text GLabel 4350 4950 2    50   Input ~ 0
+Vo2
+$EndSCHEMATC
